@@ -138,8 +138,49 @@ Evaluate the model's performance on the test set:
 ```python
 model.evaluate(X_test, y_test)
 ```
-## Confusion Matrics
-![output](https://github.com/Yogender21505/Classification_spam_nonspam_mails/assets/104339650/21a2b74f-d058-4e9a-8af8-9758ff89121c)
+### Confusion Matrix Interpretation
+![Confusion Matrix]
+(https://github.com/Yogender21505/Classification_spam_nonspam_mails/assets/104339650/21a2b74f-d058-4e9a-8af8-9758ff89121c).
+The confusion matrix below summarizes the performance of our spam classification model:
+
+|              | Predicted Negative (ham) | Predicted Positive (spam) |
+|--------------|--------------------------|---------------------------|
+| Actual Negative (ham) | TN = 1192               | FP = 14                    |
+| Actual Positive (spam) | FN = 56                 | TP = 131                   |
+
+#### Interpretation:
+
+- **True Negatives (TN)**: 1192
+  - These are instances correctly predicted as ham and were actually ham.
+
+- **False Positives (FP)**: 14
+  - These are instances incorrectly predicted as spam but were actually ham.
+
+- **False Negatives (FN)**: 56
+  - These are instances incorrectly predicted as ham but were actually spam.
+
+- **True Positives (TP)**: 131
+  - These are instances correctly predicted as spam and were actually spam.
+
+#### Metrics:
+
+- **Accuracy**: \( 95.48\% \)
+  - Proportion of correct predictions (both spam and ham).
+
+- **Precision**: \( 90.36\% \)
+  - Proportion of correctly predicted spam emails out of all predicted spam emails.
+
+- **Recall (Sensitivity)**: \( 70.05\% \)
+  - Proportion of correctly predicted spam emails out of all actual spam emails.
+
+- **F1 Score**: \( 0.7907 \)
+  - Harmonic mean of precision and recall, providing a balanced measure.
+
+- **Specificity**: \( 98.84\% \)
+  - Proportion of correctly predicted ham emails out of all actual ham emails.
+
+These metrics help evaluate the model's ability to classify emails as spam or ham, providing insights into its performance and areas for potential improvement.
+
 
 ## Inference
 Use the trained model to predict whether new messages are spam or not:
