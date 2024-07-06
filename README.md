@@ -1,6 +1,6 @@
 # Spam vs. Non-Spam Email Classification using BERT
 
-This project demonstrates how to classify emails as spam or non-spam using BERT (Bidirectional Encoder Representations from Transformers) and TensorFlow. The dataset used is sourced from Kaggle.
+This project demonstrates classification of emails as spam or non-spam using BERT (Bidirectional Encoder Representations from Transformers) and TensorFlow. The dataset used is sourced from Kaggle.
 
 ## Table of Contents
 - [Introduction](#introduction)
