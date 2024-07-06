@@ -138,6 +138,8 @@ Evaluate the model's performance on the test set:
 ```python
 model.evaluate(X_test, y_test)
 ```
+## Confusion Matrics
+![output](https://github.com/Yogender21505/Classification_spam_nonspam_mails/assets/104339650/21a2b74f-d058-4e9a-8af8-9758ff89121c)
 
 ## Inference
 Use the trained model to predict whether new messages are spam or not:
