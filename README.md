@@ -139,8 +139,8 @@ Evaluate the model's performance on the test set:
 model.evaluate(X_test, y_test)
 ```
 ### Confusion Matrix Interpretation
-![Confusion Matrix]
-(https://github.com/Yogender21505/Classification_spam_nonspam_mails/assets/104339650/21a2b74f-d058-4e9a-8af8-9758ff89121c).
+![Confusion Matrix](https://github.com/Yogender21505/Classification_spam_nonspam_mails/assets/104339650/e347ab1b-3bff-4b78-ae8f-187acead83bd).
+
 The confusion matrix below summarizes the performance of our spam classification model:
 
 |              | Predicted Negative (ham) | Predicted Positive (spam) |
