@@ -32,8 +32,8 @@ This project uses a pre-trained BERT model to encode email texts into embeddings
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/spam-classification-bert.git
-    cd spam-classification-bert
+    git clone https://github.com/Yogender21505/Classification_spam_nonspam_mails.git
+    cd Classification_spam_nonspam_mails
     ```
 
 2. Install the required packages:
@@ -137,3 +137,19 @@ Evaluate the model's performance on the test set:
 
 ```python
 model.evaluate(X_test, y_test)
+```
+
+## Inference
+Use the trained model to predict whether new messages are spam or not:
+```python
+reviews = [
+    'Reply to win Â£100 weekly! Where will the 2006 FIFA World Cup be held? Send STOP to 87239 to end service',
+    'You are awarded a SiPix Digital Camera! call 09061221061 from landline. Delivery within 28days. T Cs Box177. M221BP. 2yr warranty. 150ppm. 16 . p pÂ£3.99',
+    'it to 80488. Your 500 free text messages are valid until 31 December 2005.',
+    'Hey Sam, Are you coming for a cricket game tomorrow',
+    "Why don't you wait 'til at least wednesday to see if you get your ."
+]
+
+model.predict(reviews)
+```
+The `model.predict` function outputs the probability of each review being spam, with values closer to 1 indicating a higher likelihood of spam.
