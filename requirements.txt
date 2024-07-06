@@ -1,0 +1,5 @@
+tensorflow
+tensorflow_hub
+tensorflow_text
+pandas
+scikit-learn
